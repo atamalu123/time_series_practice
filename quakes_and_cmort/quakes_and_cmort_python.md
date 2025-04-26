@@ -98,7 +98,7 @@ print(ar1fit.summary())
     Model:                            OLS   Adj. R-squared:                  0.290
     Method:                 Least Squares   F-statistic:                     40.60
     Date:                Sat, 26 Apr 2025   Prob (F-statistic):           6.47e-09
-    Time:                        00:11:53   Log-Likelihood:                -315.62
+    Time:                        01:25:23   Log-Likelihood:                -315.62
     No. Observations:                  98   AIC:                             635.2
     Df Residuals:                      96   BIC:                             640.4
     Df Model:                           1                                         
@@ -175,7 +175,7 @@ x = x[~np.isnan(x)]
 df = pd.DataFrame({'mortality_rate': x, 'Time': range(1, len(x) + 1)})
 ```
 
-    C:\Users\atama\AppData\Local\Temp\ipykernel_40540\79082574.py:1: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+    C:\Users\atama\AppData\Local\Temp\ipykernel_39924\79082574.py:1: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
       x = pd.read_csv('https://online.stat.psu.edu/stat510/sites/stat510/files/L01/cmort.dat', delim_whitespace = True, header = None)
     
 
@@ -258,25 +258,25 @@ print(ar1fit.summary())
 
                                 OLS Regression Results                            
     ==============================================================================
-    Dep. Variable:               mortdiff   R-squared:                       0.255
-    Model:                            OLS   Adj. R-squared:                  0.253
-    Method:                 Least Squares   F-statistic:                     171.4
-    Date:                Sat, 26 Apr 2025   Prob (F-statistic):           6.94e-34
-    Time:                        01:00:29   Log-Likelihood:                -1600.0
-    No. Observations:                 503   AIC:                             3204.
-    Df Residuals:                     501   BIC:                             3212.
+    Dep. Variable:               mortdiff   R-squared:                       0.257
+    Model:                            OLS   Adj. R-squared:                  0.255
+    Method:                 Least Squares   F-statistic:                     174.1
+    Date:                Sat, 26 Apr 2025   Prob (F-statistic):           2.34e-34
+    Time:                        01:25:44   Log-Likelihood:                -1608.7
+    No. Observations:                 506   AIC:                             3221.
+    Df Residuals:                     504   BIC:                             3230.
     Df Model:                           1                                         
     Covariance Type:            nonrobust                                         
     ==============================================================================
                      coef    std err          t      P>|t|      [0.025      0.975]
     ------------------------------------------------------------------------------
-    const         -0.0292      0.260     -0.112      0.911      -0.540       0.482
-    lag1          -0.5050      0.039    -13.090      0.000      -0.581      -0.429
+    const         -0.0463      0.259     -0.179      0.858      -0.555       0.463
+    lag1          -0.5064      0.038    -13.195      0.000      -0.582      -0.431
     ==============================================================================
-    Omnibus:                        2.766   Durbin-Watson:                   2.067
-    Prob(Omnibus):                  0.251   Jarque-Bera (JB):                2.645
-    Skew:                           0.113   Prob(JB):                        0.267
-    Kurtosis:                       3.273   Cond. No.                         6.74
+    Omnibus:                        2.933   Durbin-Watson:                   2.060
+    Prob(Omnibus):                  0.231   Jarque-Bera (JB):                2.822
+    Skew:                           0.119   Prob(JB):                        0.244
+    Kurtosis:                       3.278   Cond. No.                         6.75
     ==============================================================================
     
     Notes:
